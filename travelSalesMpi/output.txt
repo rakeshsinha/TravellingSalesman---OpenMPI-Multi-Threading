@@ -1,0 +1,314 @@
+root@rakesh-pc:/home/rakesh/Fall16/ConAndPara/assignment/travelSalesMulti# ./travel assignmentGraph.txt 3 -v
+
+ The original matrix :
+
+	9999	3	4	2	7
+	3	9999	4	6	3
+	4	4	9999	5	8
+	2	6	5	9999	6
+	7	3	8	6	9999
+Cost of the Root Node: 17.5
+
+
+Created thread -- 139917426042624
+Created thread -- 139917417649920
+139917417649920 Enter Thread
+Created thread -- 139917409257216
+139917417649920 going for mutex1
+139917409257216 Enter Thread
+139917426042624 Enter Thread
+139917409257216 going for mutex1
+139917417649920 Accquired mutex1, queue size = 1
+139917417649920 Picked Node Cost = 17.500000
+139917417649920 Released mutex1
+139917409257216 Accquired mutex1, queue size = 0
+139917409257216 entering condition wait, checkWaiting = 1
+139917417649920 Branching at [1][2], value = 1
+139917426042624 going for mutex1
+139917426042624 Accquired mutex1, queue size = 0
+139917417649920
+	2	0	1	1	1
+	0	2	1	1	1
+	1	1	2	1	1
+	1	1	1	2	1
+	1	1	1	1	2
+139917426042624 entering condition wait, checkWaiting = 2
+139917417649920
+
+	2	-1	1	1	1
+	-1	2	1	1	1
+	1	1	2	1	1
+	1	1	1	2	1
+	1	1	1	1	2
+
+139917417649920 Cost of [1][2] : 0 --> 17.500000
+139917417649920 Cost of [1][2] : -1 --> 18.500000
+139917417649920 wait for mutex 1,2
+139917417649920 acquired mutex 1,2
+139917417649920 Pushing N1
+139917417649920 Pushing N2
+139917417649920 Released mutex 1,2
+139917417649920 Condition Signaled to All
+139917417649920 going for mutex1
+139917409257216 leaving condition wait, checkWaiting = 1
+139917409257216 Picked Node Cost = 17.500000
+139917409257216 Released mutex1
+139917426042624 leaving condition wait, checkWaiting = 0
+139917409257216 Branching at [1][3], value = 1
+139917426042624 Picked Node Cost = 18.500000
+139917426042624 Released mutex1
+139917417649920 Accquired mutex1, queue size = 0
+139917409257216
+	2	0	0	-1	-1
+	0	2	1	1	1
+	0	1	2	1	1
+	-1	1	1	2	1
+	-1	1	1	1	2
+139917417649920 entering condition wait, checkWaiting = 1
+139917426042624 Branching at [1][3], value = 1
+139917409257216
+
+	2	0	-1	1	1
+	0	2	1	1	1
+	-1	1	2	1	1
+	1	1	1	2	1
+	1	1	1	1	2
+
+139917426042624
+	2	-1	0	1	1
+	-1	2	1	1	1
+	0	1	2	1	1
+	1	1	1	2	1
+	1	1	1	1	2
+139917409257216 Cost of [1][3] : 0 --> 20.500000
+139917426042624
+
+	2	-1	-1	0	0
+	-1	2	1	1	1
+	-1	1	2	1	1
+	0	1	1	2	1
+	0	1	1	1	2
+
+139917409257216 Cost of [1][3] : -1 --> 18.000000
+139917409257216 wait for mutex 1,2
+139917426042624 Cost of [1][3] : 0 --> 18.500000
+139917409257216 acquired mutex 1,2
+139917409257216 Pushing N1
+139917426042624 Cost of [1][3] : -1 --> 21.000000
+139917409257216 Pushing N2
+139917426042624 wait for mutex 1,2
+139917409257216 Released mutex 1,2
+139917426042624 acquired mutex 1,2
+139917409257216 Condition Signaled to All
+139917426042624 Pushing N1
+139917409257216 going for mutex1
+139917426042624 Pushing N2
+139917426042624 Released mutex 1,2
+139917426042624 Condition Signaled to All
+139917417649920 leaving condition wait, checkWaiting = 0
+139917426042624 going for mutex1
+139917417649920 Picked Node Cost = 18.000000
+139917417649920 Released mutex1
+139917409257216 Accquired mutex1, queue size = 3
+139917417649920 Branching at [1][4], value = 1
+139917409257216 Picked Node Cost = 18.500000
+139917409257216 Released mutex1
+139917417649920
+	2	0	-1	0	-1
+	0	2	1	1	1
+	-1	1	2	1	1
+	0	1	1	2	1
+	-1	1	1	1	2
+139917409257216 Branching at [1][4], value = 1
+139917417649920
+
+	2	0	-1	-1	0
+	0	2	1	1	1
+	-1	1	2	1	1
+	-1	1	1	2	1
+	0	1	1	1	2
+139917426042624 Accquired mutex1, queue size = 2
+
+139917426042624 Picked Node Cost = 20.500000
+139917426042624 Released mutex1
+139917417649920 Cost of [1][4] : 0 --> 18.000000
+139917426042624 Branching not possible at level : 1
+139917417649920 Cost of [1][4] : -1 --> 23.000000
+139917426042624 Branching at [2][3], value = 1
+139917409257216
+	2	-1	0	0	-1
+	-1	2	1	1	1
+	0	1	2	1	1
+	0	1	1	2	1
+	-1	1	1	1	2
+139917426042624
+	2	0	0	-1	-1
+	0	2	0	-1	-1
+	0	0	2	-1	-1
+	-1	-1	-1	2	1
+	-1	-1	-1	1	2
+139917409257216
+
+	2	-1	0	-1	0
+	-1	2	1	1	1
+	0	1	2	1	1
+	-1	1	1	2	1
+	0	1	1	1	2
+
+139917426042624
+
+	2	0	0	-1	-1
+	0	2	-1	1	1
+	0	-1	2	1	1
+	-1	1	1	2	1
+	-1	1	1	1	2
+
+139917409257216 Cost of [1][4] : 0 --> 18.500000
+139917417649920 wait for mutex 1,2
+139917409257216 Cost of [1][4] : -1 --> 23.500000
+139917417649920 acquired mutex 1,2
+139917426042624 Cannot calculate cost as this branching is invalid. Setting cost to maximum
+139917409257216 wait for mutex 1,2
+139917426042624 Cost of [2][3] : 0 --> 49999.500000
+139917417649920 Pushing N1
+139917426042624 Cost of [2][3] : -1 --> 21.000000
+139917417649920 Pushing N2
+139917426042624 wait for mutex 1,2
+139917417649920 Released mutex 1,2
+139917426042624 acquired mutex 1,2
+139917417649920 Condition Signaled to All
+139917426042624 Pushing N1
+139917417649920 going for mutex1
+139917426042624 Pushing N2
+139917426042624 Released mutex 1,2
+139917409257216 acquired mutex 1,2
+139917426042624 Condition Signaled to All
+139917409257216 Pushing N1
+139917426042624 going for mutex1
+139917409257216 Pushing N2
+139917409257216 Released mutex 1,2
+139917417649920 Accquired mutex1, queue size = 7
+139917409257216 Condition Signaled to All
+139917417649920 Picked Node Cost = 18.000000
+139917409257216 going for mutex1
+139917417649920 Released mutex1
+139917409257216 Accquired mutex1, queue size = 6
+139917417649920 Branching not possible at level : 1
+139917409257216 Picked Node Cost = 18.500000
+139917409257216 Released mutex1
+139917426042624 Accquired mutex1, queue size = 5
+139917417649920 Branching at [2][3], value = 1
+139917426042624 Picked Node Cost = 21.000000
+139917426042624 Released mutex1
+139917417649920
+	2	0	-1	0	-1
+	0	2	0	-1	-1
+	-1	0	2	1	0
+	0	-1	1	2	0
+	-1	-1	0	0	2
+139917426042624 Branching not possible at level : 1
+139917417649920
+
+	2	0	-1	0	-1
+	0	2	-1	-1	0
+	-1	-1	2	0	0
+	0	-1	0	2	-1
+	-1	0	0	-1	2
+
+139917426042624 Branching at [2][3], value = 1
+139917417649920 Cost of [2][3] : 0 --> 23.000000
+139917417649920 Cost of [2][3] : -1 --> 21.000000
+139917426042624
+	2	-1	-1	0	0
+	-1	2	0	1	1
+	-1	0	2	1	1
+	0	1	1	2	1
+	0	1	1	1	2
+139917417649920 wait for mutex 1,2
+139917417649920 acquired mutex 1,2
+139917426042624
+
+	2	-1	-1	0	0
+	-1	2	-1	0	0
+	-1	-1	2	0	0
+	0	0	0	2	1
+	0	0	0	1	2
+
+139917409257216 Branching not possible at level : 1
+139917426042624 Cost of [2][3] : 0 --> 21.000000
+139917417649920 N1 is a leaf node
+139917426042624 Cost of [2][3] : -1 --> 24.500000
+139917417649920 Popping node of cost = 23.000000
+139917409257216 Branching at [2][3], value = 1
+139917409257216
+	2	-1	0	0	-1
+	-1	2	0	1	0
+	0	0	2	-1	-1
+	0	1	-1	2	0
+	-1	0	-1	0	2
+139917409257216
+
+	2	-1	0	0	-1
+	-1	2	-1	0	0
+	0	-1	2	-1	0
+	0	0	-1	2	-1
+	-1	0	0	-1	2
+
+139917409257216 Cost of [2][3] : 0 --> 19.000000
+139917409257216 Cost of [2][3] : -1 --> 23.000000
+139917409257216 wait for mutex 1,2
+139917426042624 wait for mutex 1,2
+139917417649920 Popping node of cost = 23.500000
+139917417649920 Popping node of cost = 49999.500000
+139917417649920 N2 is a leaf node
+139917417649920 Popping node of cost = 21.000000
+139917417649920 N2 is a potential Final Matrix
+139917417649920 Starting to find the path
+
+
+139917417649920 Path = 125341
+
+139917417649920 Path for N2 = 125341
+139917417649920 Released mutex2
+139917417649920 going for mutex1
+139917417649920 Accquired mutex1, queue size = 0
+139917417649920 entering condition wait, checkWaiting = 1
+139917409257216 acquired mutex 1,2
+139917409257216 N1 is a leaf node
+139917409257216 N1 is a potential Final Matrix
+139917409257216 Starting to find the path
+
+
+139917409257216 Path = 132541
+
+139917409257216 Path for N1 = 132541
+139917409257216 Released mutex2
+139917426042624 acquired mutex 1,2
+139917409257216 going for mutex1
+139917426042624 Not Pushing N1, since we already have lower bound of -- 19
+139917426042624 Not Pushing N2, since we already have lower bound of -- 19
+139917426042624 Released mutex 1,2
+139917409257216 Accquired mutex1, queue size = 0
+139917426042624 Condition Signaled to All
+139917409257216 entering condition wait, checkWaiting = 2
+139917426042624 going for mutex1
+139917417649920 leaving condition wait, checkWaiting = 1
+139917417649920 Released mutex1
+139917417649920 going for mutex1
+139917426042624 Accquired mutex1, queue size = 0
+139917426042624 entering condition wait, checkWaiting = 2
+139917417649920 Accquired mutex1, queue size = 0
+139917417649920 All threads waiting
+139917417649920 entering condition wait, checkWaiting = 3
+139917409257216 leaving condition wait, checkWaiting = 2
+139917409257216 Released mutex1
+139917426042624 leaving condition wait, checkWaiting = 1
+139917426042624 Released mutex1
+139917417649920 leaving condition wait, checkWaiting = 0
+139917417649920 Released mutex1
+Joined thread -- thread::id of a non-executing thread
+Joined thread -- thread::id of a non-executing thread
+Joined thread -- thread::id of a non-executing thread
+ All Threads done
+ Final Path -- 132541
+
